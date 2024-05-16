@@ -1,0 +1,266 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GymApp.Web.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home_page.css">
+
+    <style>
+
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index"><span class="logo-red">WOLF</span>GYM</a>
+
+            <!-- Navbar Toggle Button (For Mobile) -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Items -->
+            <div class=" collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mr-auto" id="navbarNav-ul">
+                    <li class="nav-item active">
+                        <a asp-controller="Home" asp-action="Index" class="nav-link" id="navbarHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-action="ExerciseMain" asp-controller="Exercise" asp-route-bodyPart="@null">Exercises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="javascript:void(0);" onclick="scrollToAbout()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="javascript:void(0);" onclick="scrollToContact()">Contact</a>
+                    </li>
+
+                </ul>
+
+                
+
+
+        
+
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="row">
+        <div class="col-md-12">
+           
+        
+        
+        <div class="homePageMainDiv">
+            <div id="homePageImageDiv" style="background-image: url('3_Laxogenin_benefits_600x600.webp');">
+                <div class="letter">
+            <p style="color:white;">Ready to Train </p>
+            <p style="color: red;">Your Body</p>
+            <p style="font-size: 1vw; color: white;">Gym trainig is a structured and disciplined  approach to physical exercise that <br>
+                focuses o strength,endurance and overall fitness improvement.             
+            </p>
+            
+            </div>
+            </div>
+        </div>
+        
+            <div class="row" id="photoMainDiv">
+                <div class="col-md-12" id="photoContent">
+        
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="imgDiv" >
+        
+                                <img src="" alt="" width="100%" height="100%" style="object-fit:cover"/>
+                                <div class="imgDivOverlay">
+                                </div>
+                            </div>
+        
+        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="imgDiv" >
+                                <img src="~/images/wolf-gym/wolf-gym-2.jpg" alt="" width="100%" height="100%" style="object-fit:cover" />
+                                <div class="imgDivOverlay">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="imgDiv">
+                                <img src="~/images/wolf-gym/wolf-gym-3.jpg" alt="" width="100%" height="100%" style="object-fit:cover" />
+                                <div class="imgDivOverlay">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="imgDiv">
+                                <img src="~/images/wolf-gym/wolf-gym-4.jpg" alt="" width="100%" height="100%" style="object-fit:cover" />
+                                <div class="imgDivOverlay">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        
+        
+            <div class="row p-5" id="about">
+                <div class="col-md-12" id="aboutUsContent">
+                    <div class="row">
+                        <div class="col-md-12" id="aboutUsTitle"><h1 class="text-center text-white">ABOUT US</h1></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="aboutUsText">
+                            <p class="text-center text-white">
+                                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                            </p>
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+        
+        
+            <div class="row text-dark" id ="contact" style="padding-bottom:150px">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-center text-white py-2">CONTACT INFORMATION</h2>
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-center p-5">
+        
+                        <div class="col-md-6">
+        
+                            <div class="info bg-light p-3">
+                                <h4>Address</h4>
+                                <hr style="border: 1px solid red">
+                                <div class="contact-icon">
+                                    <p>Hacıhalil, 1228. Sk. No:8/B, 41400 Gebze/Kocaeli</p>
+                                </div>
+                                <div class="contact-icon">
+                                    <p>0537 333 03 93</p>
+                                </div>
+                                <div class="contact-icon">
+                                    <p>loremipsum@gmail.com</p>
+                                </div>
+                                <h4>Working Hours</h4>
+                                <hr style="border: 1px solid red">
+                                <div class="paragraph">
+                                    <p>Hafta içi: 10:00-23:00</p>
+                                    <p>Cumartesi: 12:00-20:00</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-6">
+                            
+                                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.2470771334297!2d29.43106807550301!3d40.80056403218987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb208ef27c3eef%3A0xe868557ef8857d59!2sWOLF%20GYM%20F%C4%B0TNESS!5e0!3m2!1str!2str!4v1702826586119!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        <div id="topBtn">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up text-dark"></i></button>
+        </div>
+        
+        <script>
+            // Get the button:
+            let mybutton = document.getElementById("myBtn");
+        
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+        
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+        
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    }
+
+
+
+
+
+    
+    <script>
+        function scrollToAbout() {
+            // "about" id'li bölüme manuel kaydırma işlemi
+            const aboutSection = document.getElementById('about');
+            const yOffset = aboutSection.getBoundingClientRect().top + window.pageYOffset;
+
+            window.scrollTo({ top: yOffset, behavior: 'smooth' });
+        }
+        function scrollToContact() {
+            // "about" id'li bölüme manuel kaydırma işlemi
+            const aboutSection = document.getElementById('contact');
+            const yOffset = aboutSection.getBoundingClientRect().top + window.pageYOffset;
+
+            window.scrollTo({ top: yOffset, behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- Bootstrap JS and Popper.js (Required for Navbar Toggle Button) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+</body>
+</html>

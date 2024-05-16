@@ -1,0 +1,257 @@
+body, html{
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?cs=srgb&dl=pexels-victor-freitas-841130.jpg&fm=jpg"); /* Arka plan resminin yolu */
+  background-size: cover; /* Resmi ekran boyutuna sığacak şekilde boyutlandır */
+  background-position: center; /* Resmi ortala */
+  background-repeat: no-repeat;
+}
+
+.header{
+  margin-left: 10%;
+  display: flex;
+  border-bottom:solid 1px white;
+  margin-right: 10%;
+
+}
+.wolf {
+  color: red; 
+  font-size:x-large;
+}
+.header h1{
+  width: 30%;
+}
+
+.gym {
+  color: white; 
+  font-size:x-large;
+}
+.header h2{
+  color: white;
+  margin-left: 7.5%;
+  font-size: medium;
+  margin-top: 1.5%;
+  text-align: center;
+}
+.header h2:hover{
+  color: red;
+  cursor: pointer;
+  
+  
+}
+.container{
+  display: flex;
+}
+.foto_side{
+  border-bottom:solid 1px white;
+  margin-left: 30%;
+  margin-top: 5%;
+  width: 50%;
+}
+.body{
+  background-color: grey;
+  color: white;
+  width: 15%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 300px;
+  border-radius: 10%;
+  
+}
+.personel_info{
+  width: 50%;
+  height: 300px;
+  background-color: grey;
+  margin-left: 10%;
+  margin-top: 10%;
+  
+}
+.personel_info h3{
+  color: white;
+}
+.body h3{
+  padding-left: 10%;
+  padding-top: 5%;
+}
+.body{
+  background-color: grey;
+  color: white;
+  margin-top: 0;
+  width: 50%;
+  margin-left: 30%;
+}
+.left_side{
+  display: block;
+  width: 30%;
+  height: 40%;
+}
+#name{
+  width: 50%;
+  height: 30px;
+  margin-left: 7.5%;
+  border-radius: 10px;
+}
+.save{
+  width: 50%;
+  height: 15%;
+  background-color: red;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.right_side {
+  height: 500px;
+  width: 50%; /* Yüksekliği %100 olarak ayarlanmalıdır */
+  background-color: grey;
+  margin-top: 7.5%;
+  margin-left: 5%;
+  border-radius: 5%; /* Yatayda üst kenara hizalama */
+}
+.right_side h3{
+  color: white;
+  margin-left: 5%;
+  margin-top: 5%;
+  
+}
+.right_side h2{
+  width: 100%;
+  height: 10px;
+  margin-left: 5%;
+  
+}
+.box{
+  width: 80%;
+  background-color: white;
+  height: 40px;
+  margin-left: 5%;
+  border-radius: 10px; 
+}
+.part{
+  width:40%;
+  display: inline-block;
+  padding-right: 5%;
+}
+
+.profile-container {
+  position: relative;
+  margin-left: 3em;
+  width: 50%;
+  height: 50%;
+}
+
+.profile-picture {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-picture img {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.text {
+  color: #fff;
+  font-size: 14px;
+}
+
+.Body_Mass h2{
+display: flex; 
+justify-content: center;
+font-size:xx-large;
+font-weight:bolder;
+}
+.Body_Mass h3{
+  color: black;
+  font-size: x-large;
+  font-weight:bolder;
+  }
+
+.colum_1{
+  display: flex;
+}
+.input-field {
+  width: 5em;
+  height: 3em;
+  margin-top: 2.5em;
+  margin-left: 2em;
+  font-weight: bold;/* Input alanının genişliğini ayarlayın */ /* Input alanının font boyutunu ayarlayın */
+}
+.input-field::placeholder {
+  color: black;
+  font-size: x-large; /* Placeholder rengini gri tonlarına ayarla */
+}
+.colum_2{
+  display: flex;
+}
+
+.Calculate{
+  width: 6em;
+  height: 3em;
+  background-color:red;
+  margin-left: 5em;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+ .left_side{
+  width: 100%;
+ }
+ .container{
+  display: inline-block;
+ }
+ .body{
+  background-color: grey;
+  width: 75%;
+  margin-left: 6em;
+  margin-top: 2rem;
+ }
+ .body h3{
+  margin-left: 3em;
+ }
+ .body button{
+  margin-left: 6em;
+ }
+ .body label{
+  margin-left: 3em;
+ }
+ .right_side{
+  width: 100%;
+  margin-left: 2em;
+ }
+}
+
+/* Telefon boyutlarına göre medya sorgusu */
+
+@media screen and (max-width: 480px) {
+  .container{
+    display: inline-block;
+   }
+  .right_side{
+    margin-left: 3em;
+  }
+  .colum_1{
+    margin-top: 5em;
+  }
+ 
+ 
+}
